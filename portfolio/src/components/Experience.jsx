@@ -14,8 +14,8 @@ const Experience = () => {
       company: "Yotta Data Services",
       period: "Jul 2024 - Feb 2025",
       description: [
-        "As an IT Operations Associate at Yotta Data Services, I am part of the DevOps team, primarily working with MyPortal, an interface designed for customers to raise queries and track them efficiently.",
-        "My role involves ensuring the seamless operation and performance of MyPortal, troubleshooting any issues that may arise, and collaborating with cross-functional teams to resolve technical challenges. I play a key role in maintaining system uptime, addressing user concerns, and ensuring a smooth customer experience through proactive monitoring and support."
+        "As an IT Operations Associate at Yotta Data Services, I am part of the DevOps team, primarily working with Zabbix, a powerful monitoring tool mounted on top of the companies hardware like network switches, storges etc.",
+        "My role involves ensuring the seamless operation and performance of Zabbix, troubleshooting any issues that may arise, and collaborating with cross-functional teams to resolve technical challenges. I play a key role in maintaining system uptime, addressing user concerns, and ensuring a smooth customer experience through proactive monitoring and support."
       ]
     }
   ];
