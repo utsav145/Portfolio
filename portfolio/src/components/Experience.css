@@ -1,0 +1,132 @@
+.experience-section {
+  padding: 5rem 0;
+  background-color: #222222;
+  color: #E0E0E0;
+}
+
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  color: #4A90E2;
+  position: relative;
+}
+
+.experience-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #4A90E2, #00C9B1);
+  border-radius: 2px;
+}
+
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.experience-item {
+  background-color: #1A1A1A;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid rgba(74, 144, 226, 0.1);
+}
+
+.experience-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  border-color: rgba(74, 144, 226, 0.4);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.experience-role {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00C9B1;
+  margin-bottom: 0.25rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.experience-role::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #4A90E2;
+  transition: width 0.3s ease;
+}
+
+.experience-company {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #E0E0E0;
+  margin-bottom: 0.5rem;
+}
+
+.experience-duration {
+  font-size: 1rem;
+  color: #A0A0A0;
+  font-weight: 500;
+}
+
+.experience-description {
+  color: #A0A0A0;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience-description ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  padding: 0;
+}
+
+.experience-description li {
+  margin-bottom: 0.5rem;
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.skill-tag {
+  background-color: #333333;
+  color: #E0E0E0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.skill-tag:hover {
+  background-color: #4A90E2;
+  transform: scale(1.05);
+} 

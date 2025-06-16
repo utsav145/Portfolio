@@ -1,0 +1,222 @@
+.projects-section {
+  padding: 5rem 0;
+  background-color: #222222;
+  color: #E0E0E0;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  color: #4A90E2;
+  position: relative;
+}
+
+.projects-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #4A90E2, #00C9B1);
+  border-radius: 2px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #1A1A1A;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(74, 144, 226, 0.1);
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border-color: rgba(74, 144, 226, 0.3);
+}
+
+.project-content {
+  padding: 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.project-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, #4A90E2, #00C9B1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-content::before {
+  opacity: 1;
+}
+
+.project-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #00C9B1;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.project-name::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #4A90E2;
+  transition: width 0.3s ease;
+}
+
+.project-card:hover .project-name::after {
+  width: 100%;
+}
+
+.project-description {
+  color: #A0A0A0;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  gap: 0.5rem;
+}
+
+.project-link-live {
+  background-color: #4A90E2;
+  color: white;
+}
+
+.project-link-live:hover {
+  background-color: #00C9B1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-link-github {
+  border: 2px solid #4A90E2;
+  color: #4A90E2;
+}
+
+.project-link-github:hover {
+  background-color: #4A90E2;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Section divider */
+.projects-section-divider {
+  text-align: center;
+  margin: 4rem 0;
+  position: relative;
+}
+
+.projects-section-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #4A90E2, transparent);
+}
+
+.projects-section-divider span {
+  background-color: #222222;
+  padding: 0 2rem;
+  color: #00C9B1;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.other-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .other-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.other-project-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.other-project-content {
+  padding: 1.5rem;
+}
+
+.other-project-description-list {
+  list-style-type: disc;
+  list-style-position: inside;
+  color: #4b5563;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.other-project-tech-tag {
+  background-color: #e5e7eb;
+  color: #4b5563;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+} 

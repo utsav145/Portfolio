@@ -1,0 +1,87 @@
+.skillshare-page {
+  min-height: 100vh;
+  background-color: #222222;
+  color: #E0E0E0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  transition: all 1s ease-out;
+}
+
+.skillshare-page.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skillshare-page {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.ss-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.ss-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  color: #4A90E2;
+}
+
+.ss-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #00C9B1;
+}
+
+.ss-sub-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #00C9B1;
+}
+
+.ss-paragraph {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: #A0A0A0;
+}
+
+.ss-list {
+  list-style: disc;
+  list-style-position: inside;
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+  color: #A0A0A0;
+}
+
+.ss-list li {
+  margin-bottom: 0.5rem;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  background-color: #4A90E2;
+  color: white;
+  padding: 0.9rem 2.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+  background-color: #00C9B1;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+} 

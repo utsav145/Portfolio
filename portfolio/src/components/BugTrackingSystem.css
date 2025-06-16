@@ -1,0 +1,190 @@
+.bug-tracking-system-page {
+  min-height: 100vh;
+  background-color: #222222;
+  color: #E0E0E0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  transition: all 1s ease-out;
+}
+
+.bug-tracking-system-page.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bug-tracking-system-page {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.bts-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.bts-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  color: #4A90E2;
+}
+
+.bts-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #00C9B1;
+}
+
+.bts-paragraph {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: #A0A0A0;
+}
+
+.bts-list {
+  list-style: disc;
+  list-style-position: inside;
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+  color: #A0A0A0;
+}
+
+.bts-list li,
+.bts-nested-list li {
+  margin-bottom: 0.5rem;
+}
+
+.bts-nested-list {
+  list-style: circle;
+  list-style-position: inside;
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+  color: #A0A0A0;
+}
+
+.role-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.role-card {
+  background-color: #2A2A2A;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 20rem;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 1px solid #333333;
+}
+
+.role-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.role-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.role-card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #4A90E2;
+}
+
+.role-card-list {
+  list-style: disc;
+  list-style-position: inside;
+  font-size: 1rem;
+  color: #A0A0A0;
+}
+
+.role-card-list li {
+  margin-bottom: 0.3rem;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  background-color: #4A90E2;
+  color: white;
+  padding: 0.9rem 2.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+  background-color: #00C9B1;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.clickable-image {
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5vh;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #222222;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  max-width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #E0E0E0;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #4A90E2;
+}
+
+.enlarged-image {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+} 

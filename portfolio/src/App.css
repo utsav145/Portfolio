@@ -1,0 +1,45 @@
+.app-container {
+  min-height: 100vh;
+  background-color: #1A1A1A; /* Dark charcoal background */
+  color: #E0E0E0; /* Light text color */
+}
+
+.app-main {
+  padding-top: 4rem; /* To account for fixed navbar height */
+}
+
+.app-footer {
+  background-color: #0D0D0D; /* Off-black for footer */
+  color: #E0E0E0;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-text {
+  margin-bottom: 1rem;
+  color: #A0A0A0; /* Muted gray for copyright text */
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #4A90E2;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00C9B1; /* Teal hover effect */
+  transform: translateY(-3px); /* Slight lift on hover */
+} 

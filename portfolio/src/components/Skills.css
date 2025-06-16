@@ -1,0 +1,115 @@
+
+.skills-section {
+    padding: 5rem 0;
+    background-color: #1A1A1A;
+    color: #E0E0E0;
+    transition: all 0.6s ease;
+  }
+  
+  .skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .skills-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #4A90E2;
+    position: relative;
+  }
+  
+  .skills-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 4px;
+    background: linear-gradient(to right, #4A90E2, #00C9B1);
+    border-radius: 2px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .skill-category {
+    background-color: #222;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    border: 1px solid rgba(74, 144, 226, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .skill-category:hover {
+    transform: translateY(-6px);
+    border-color: rgba(74, 144, 226, 0.4);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  }
+  
+  .category-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #00C9B1;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  
+  .category-title::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(to bottom, #4A90E2, #00C9B1);
+    border-radius: 2px;
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  
+  .skill-item {
+    background-color: #333;
+    color: #E0E0E0;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    border: 1px solid rgba(74, 144, 226, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    cursor: default;
+    gap: 0.4rem;
+  }
+  
+  .skill-item::before {
+    content: '\2022';
+    color: #00C9B1;
+    font-size: 1.1rem;
+  }
+  
+  .skill-item:hover {
+    background-color: #4A90E2;
+    color: #ffffff;
+    transform: translateY(-2px);
+    border-color: #4A90E2;
+    box-shadow: 0 3px 6px rgba(74, 144, 226, 0.3);
+  }
+  
+  .skill-item:hover::before {
+    color: #ffffff;
+  }
+  
