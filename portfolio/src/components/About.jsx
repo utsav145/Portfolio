@@ -61,7 +61,7 @@ const About = () => {
 
           <div className="resume-button-container">
             <a 
-              href="/path-to-your-resume.pdf" 
+              href="https://drive.google.com/file/d/1f_HMGfn8PdYmcIIjMj1k5TyxAfkkhH9E/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer"
               className="resume-button"
