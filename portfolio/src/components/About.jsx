@@ -61,7 +61,7 @@ const About = () => {
 
           <div className="resume-button-container">
             <a 
-              href="https://drive.google.com/file/d/1f_HMGfn8PdYmcIIjMj1k5TyxAfkkhH9E/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1U53rDe3om-DNeRzBMdqzCrhYuaMP0BeD/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer"
               className="resume-button"
