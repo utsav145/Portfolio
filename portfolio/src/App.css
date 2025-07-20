@@ -31,15 +31,86 @@
   display: flex;
   gap: 1rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer-links a {
   color: #4A90E2;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: rgba(74, 144, 226, 0.1);
 }
 
 .footer-links a:hover {
   color: #00C9B1; /* Teal hover effect */
   transform: translateY(-3px); /* Slight lift on hover */
+  background-color: rgba(0, 201, 177, 0.1);
+}
+
+/* Responsive Design for Footer */
+@media screen and (max-width: 768px) {
+  .app-footer {
+    padding: 1.5rem 0;
+  }
+
+  .footer-container {
+    padding: 0 1.5rem;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-links {
+    gap: 0.8rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links a {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    min-width: 120px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app-footer {
+    padding: 1rem 0;
+  }
+
+  .footer-container {
+    padding: 0 1rem;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-links {
+    gap: 0.6rem;
+  }
+
+  .footer-links a {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-text {
+    font-size: 0.75rem;
+  }
+
+  .footer-links a {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    min-width: 80px;
+  }
 } 
