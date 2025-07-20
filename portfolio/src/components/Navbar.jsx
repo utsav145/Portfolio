@@ -1,39 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/#home" className="navbar-brand">
+        <Link to="/#home" className="navbar-brand" onClick={closeMenu}>
           Utsav Gavli
         </Link>
-        <div className="navbar-links">
-          <Link to="/#home">
+        
+        {/* Mobile menu button */}
+        <div className="navbar-toggle" onClick={toggleMenu}>
+          <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
+          <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
+          <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
+        </div>
+
+        <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
+          <Link to="/#home" onClick={closeMenu}>
             Home
           </Link>
-          <Link to="/#about">
+          <Link to="/#about" onClick={closeMenu}>
             About
           </Link>
-          <Link to="/#projects">
+          <Link to="/#projects" onClick={closeMenu}>
             Projects
           </Link>
-          <Link to="/#experience">
+          <Link to="/#experience" onClick={closeMenu}>
             Experience
           </Link>
-          <Link to="/#education">
+          <Link to="/#education" onClick={closeMenu}>
             Education
           </Link>
-          <Link 
-            to="/#skills"
-          >
+          <Link to="/#skills" onClick={closeMenu}>
             Skills
           </Link>
-          <Link to="/#certificates">
+          <Link to="/#certificates" onClick={closeMenu}>
             Certificates
           </Link>
-          <Link to="/#contact">
+          <Link to="/#contact" onClick={closeMenu}>
             Contact
           </Link>
         </div>
