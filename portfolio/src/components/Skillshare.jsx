@@ -28,7 +28,7 @@ const Skillshare = () => {
         <div className="features-grid">
           <div className="feature-card">
             <h3 className="feature-title">Skill Marketplace</h3>
-            <p>A comprehensive platform for professionals to offer their skills and for users to find and hire talent for various projects.</p>
+            <p>A comprehensive platform for professionals to offer their skills and for users to find and connect with talent for various projects.</p>
           </div>
           
           <div className="feature-card">
@@ -38,7 +38,7 @@ const Skillshare = () => {
           
           <div className="feature-card">
             <h3 className="feature-title">Profile Management</h3>
-            <p>Customizable user profiles showcasing skills, experience, service offerings, and pricing information.</p>
+            <p>Customizable user profiles showcasing skills, experience, service offerings, and expertise information.</p>
           </div>
           
           <div className="feature-card">
@@ -57,8 +57,8 @@ const Skillshare = () => {
           </div>
           
           <div className="feature-card">
-            <h3 className="feature-title">Hiring Functionality</h3>
-            <p>Streamlined process for users to directly hire professionals for their listed skills and services.</p>
+            <h3 className="feature-title">Connection System</h3>
+            <p>Streamlined process for users to connect with professionals for their listed skills and services.</p>
           </div>
           
           <div className="feature-card">
@@ -72,13 +72,13 @@ const Skillshare = () => {
           <div className="platform-feature-section">
             <h3 className="platform-feature-title">For Skill Providers</h3>
             <ul className="platform-feature-list">
-              <li>Create detailed service profiles with skills and pricing</li>
+              <li>Create detailed service profiles with skills and expertise</li>
               <li>Upload portfolio images and showcase previous work</li>
               <li>Set availability and response time expectations</li>
               <li>Receive and manage service requests</li>
               <li>Communicate directly with potential clients</li>
               <li>Build reputation through reviews and ratings</li>
-              <li>Track earnings and project history</li>
+              <li>Track project history and connections</li>
               <li>Customize profile visibility and privacy settings</li>
             </ul>
           </div>
@@ -87,11 +87,11 @@ const Skillshare = () => {
             <h3 className="platform-feature-title">For Skill Seekers</h3>
             <ul className="platform-feature-list">
               <li>Browse professionals by skills and categories</li>
-              <li>Filter by ratings, pricing, and availability</li>
+              <li>Filter by ratings, expertise, and availability</li>
               <li>Post detailed project requirements</li>
               <li>Receive proposals from qualified professionals</li>
               <li>Compare offers and professional profiles</li>
-              <li>Secure payment and milestone tracking</li>
+              <li>Connect with professionals for collaboration</li>
               <li>Rate and review completed services</li>
               <li>Save favorite professionals for future projects</li>
             </ul>
@@ -146,12 +146,12 @@ const Skillshare = () => {
             <p>JWT-based authentication with encrypted password storage and secure session management</p>
           </div>
           <div className="security-item">
-            <h4>Payment Protection</h4>
-            <p>Secure payment processing with escrow services and milestone-based payment releases</p>
+            <h4>Data Protection</h4>
+            <p>Secure data transmission and storage with proper encryption and access controls</p>
           </div>
           <div className="security-item">
             <h4>Quality Assurance</h4>
-            <p>Comprehensive rating system, review verification, and dispute resolution mechanisms</p>
+            <p>Comprehensive rating system, review verification, and community moderation mechanisms</p>
           </div>
         </div>
 
@@ -159,8 +159,8 @@ const Skillshare = () => {
           This project demonstrates a comprehensive understanding of full-stack web development, including 
           secure authentication, robust data management, a dynamic skill marketplace, and user-friendly interfaces. 
           It highlights my ability to build scalable and interactive platforms that facilitate real-world connections 
-          and transactions, showcasing expertise in creating marketplaces that connect service providers with clients 
-          in a secure and efficient manner.
+          and professional networking, showcasing expertise in creating platforms that connect service providers 
+          with clients in a secure and efficient manner.
         </p>
       </div>
     </div>
