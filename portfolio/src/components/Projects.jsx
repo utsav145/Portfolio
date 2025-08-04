@@ -28,7 +28,7 @@ const Projects = () => {
       name: "Dream Logs",
       description: "A social platform where users can share their dreams, explore others' experiences, and connect over common themes. Features include friend requests, comment system, blocking mechanism, privacy controls, and admin moderation for a safe community environment.",
       
-      githubLink: "https://github.com/utsav145/dream-logs",
+      githubLink: "https://github.com/utsav145/WeirdDreamLogs",
       detailPagePath: "/projects/dream-logs"
     }
   ];
