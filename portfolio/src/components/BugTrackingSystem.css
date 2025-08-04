@@ -187,4 +187,126 @@
   display: block;
   margin-top: 1rem;
   border-radius: 0.5rem;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: #222222;
+  border: 1px solid rgba(74, 144, 226, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(74, 144, 226, 0.15);
+  border-color: rgba(74, 144, 226, 0.4);
+}
+
+.feature-title {
+  color: #4A90E2;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.feature-card p {
+  color: #E0E0E0;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+}
+
+/* Tech Stack */
+.tech-stack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.tech-section {
+  background: #222222;
+  border: 1px solid rgba(0, 201, 177, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tech-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 201, 177, 0.15);
+  border-color: rgba(0, 201, 177, 0.4);
+}
+
+.tech-title {
+  color: #00C9B1;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.tech-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, #00C9B1, #4A90E2);
+  border-radius: 1px;
+}
+
+.tech-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-list li {
+  color: #E0E0E0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.tech-list li:last-child {
+  border-bottom: none;
+}
+
+.tech-list li:hover {
+  color: #00C9B1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .tech-stack {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .feature-card,
+  .tech-section {
+    padding: 1.25rem;
+  }
 } 
