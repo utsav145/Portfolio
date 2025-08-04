@@ -25,16 +25,21 @@ const BugTrackingSystem = () => {
     <div className={`bug-tracking-system-page ${isVisible ? 'is-visible' : ''}`}>
       <div className="bts-container">
         <Link to="/" className="back-button">Back to Projects</Link>
-        <h1 className="bts-title">Bug Tracking System</h1>
+        <h1 className="bts-title">Bug & Task Tracking Application</h1>
 
-        <h2 className="bts-subtitle text-center">Role-Based Dashboards</h2>
+        <h2 className="bts-subtitle">Overview</h2>
+        <p className="bts-paragraph">
+          The Bug & Task Tracking Application offers a comprehensive suite of features designed to streamline software project management for teams of all sizes. It provides role-based dashboards for admins, developers, and testers, ensuring that each user sees only the information and actions relevant to their responsibilities. The system supports a full bug lifecycle, including creation, assignment, progress tracking, resolution, and closure, with detailed logging of every status change, comment, and image upload. Developers and testers can reassign bugs as needed, and the application automatically flags and highlights breached bugs that exceed resolution time limits. Task management is equally robust, allowing developers to create tasks, admins to assign them to testers, and testers to close tasks or report bugs directly from tasks. The platform features secure image handling, modern UI/UX with dynamic filtering and visual indicators, and automated email notifications for all critical events, ensuring that all stakeholders are kept informed in real time. With strong authentication, role-based access control, and a responsive design, the application delivers a seamless and secure experience for managing bugs and tasks throughout the software development lifecycle.
+        </p>
+
+        <h2 className="bts-subtitle">Role-Based Dashboards</h2>
         <div className="role-cards-container">
           {/* Admin Card */}
           <div className="role-card">
-            <img
-              src="/images/admin.png"
-              alt="Admin Dashboard"
-              className="role-card-image clickable-image"
+            <img 
+              src="/images/admin.png" 
+              alt="Admin Dashboard" 
+              className="role-card-image clickable-image" 
               onClick={() => handleImageClick("/images/admin.png")}
             />
             <h3 className="role-card-title">Admin</h3>
@@ -44,96 +49,134 @@ const BugTrackingSystem = () => {
               <li>Admins can only see the projects and bugs created for those projects.</li>
               <li>Projects can have multiple developers and testers.</li>
               <li>Once a ticket is in 'In Progress' and 'Assigned' state, an Admin cannot reassign the bug unless the developer changes the state back to 'Assigned'.</li>
+              <li>Can assign tasks created by developers to testers.</li>
+              <li>Access to comprehensive logs and breaching system monitoring.</li>
             </ul>
           </div>
 
           {/* Tester Card */}
           <div className="role-card">
-            <img
-              src="/images/tester.png"
-              alt="Tester Dashboard"
-              className="role-card-image clickable-image"
+            <img 
+              src="/images/tester.png" 
+              alt="Tester Dashboard" 
+              className="role-card-image clickable-image" 
               onClick={() => handleImageClick("/images/tester.png")}
             />
             <h3 className="role-card-title">Tester</h3>
             <ul className="role-card-list">
               <li>Testers can only create bugs for their assigned projects.</li>
               <li>A Tester can have multiple projects assigned to them.</li>
+              <li>Can reassign bugs to other developers in the same project group.</li>
+              <li>Can close tasks assigned by admins or report bugs directly from tasks.</li>
+              <li>Can upload images and add comments to bugs and tasks.</li>
+              <li>Access to task management and bug lifecycle tracking.</li>
             </ul>
           </div>
 
           {/* Developer Card */}
           <div className="role-card">
-            <img
-              src="/images/dev.png"
-              alt="Developer Dashboard"
-              className="role-card-image clickable-image"
+            <img 
+              src="/images/dev.png" 
+              alt="Developer Dashboard" 
+              className="role-card-image clickable-image" 
               onClick={() => handleImageClick("/images/dev.png")}
             />
             <h3 className="role-card-title">Developer</h3>
             <ul className="role-card-list">
               <li>Developers can solve bugs only for their assigned projects.</li>
               <li>A Developer can have multiple projects assigned to them.</li>
+              <li>Can create tasks and manage their lifecycle.</li>
+              <li>Can reassign bugs to other developers in the same project group.</li>
+              <li>Can upload images and add detailed comments to bugs and tasks.</li>
+              <li>Access to breaching system alerts and resolution time tracking.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 className="bts-subtitle">Key Features</h2>
+        <div className="features-grid">
+          <div className="feature-card">
+            <h3 className="feature-title">Bug Lifecycle Management</h3>
+            <p>Complete bug lifecycle from creation to closure with status tracking, assignment, and resolution workflows.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">Task Management</h3>
+            <p>Comprehensive task creation, assignment, and tracking system integrated with bug reporting.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">Image Upload & Handling</h3>
+            <p>Secure image upload functionality for bugs and tasks with proper storage and retrieval.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">Breaching System</h3>
+            <p>Automatic detection and highlighting of bugs that exceed resolution time limits with visual indicators.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">Comprehensive Logging</h3>
+            <p>Detailed logs of all status changes, comments, assignments, and image uploads for complete audit trails.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">Reassignment System</h3>
+            <p>Flexible bug and task reassignment capabilities for testers and developers within project groups.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">Email Notifications</h3>
+            <p>Automated email notifications for all critical events to keep stakeholders informed in real-time.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">Dynamic Filtering</h3>
+            <p>Advanced filtering and sorting capabilities with visual indicators for efficient project management.</p>
+          </div>
+        </div>
+
+        <h2 className="bts-subtitle">Tech Stack</h2>
+        <div className="tech-stack">
+          <div className="tech-section">
+            <h3 className="tech-title">Frontend</h3>
+            <ul className="tech-list">
+              <li>React.js</li>
+              <li>Spring Boot</li>
+              <li>JWT Authentication</li>
+              <li>Modern UI/UX Design</li>
+              <li>Responsive Layout</li>
+            </ul>
+          </div>
+          
+          <div className="tech-section">
+            <h3 className="tech-title">Backend</h3>
+            <ul className="tech-list">
+              <li>Spring Boot</li>
+              <li>MySQL Database</li>
+              <li>JWT Security</li>
+              <li>Email Service Integration</li>
+              <li>File Upload Handling</li>
+            </ul>
+          </div>
+          
+          <div className="tech-section">
+            <h3 className="tech-title">Features</h3>
+            <ul className="tech-list">
+              <li>Role-Based Access Control</li>
+              <li>Real-time Notifications</li>
+              <li>Image Processing</li>
+              <li>Audit Logging</li>
+              <li>Breaching Detection</li>
             </ul>
           </div>
         </div>
 
         <p className="bts-paragraph">
-          A role-based web application designed to streamline the reporting, assignment, and resolution of software bugs. Built with a React frontend and a Spring Boot backend, the system provides separate dashboards and functionalities for Admins, Testers, and Developers.
-        </p>
-
-        <h2 className="bts-subtitle">Key Features:</h2>
-        <ul className="bts-list">
-          <li><strong>Role-Based Access Control:</strong>
-            <ul className="bts-nested-list">
-              <li>Admins can create projects, assign bugs to developers, and manage users.</li>
-              <li>Testers can create bug reports for their assigned projects, view project details, and track resolution progress.</li>
-              <li>Developers can view and resolve assigned bugs, update bug statuses, and write resolution notes.</li>
-            </ul>
-          </li>
-          <li><strong>Bug Lifecycle Management:</strong>
-            <ul className="bts-nested-list">
-              <li>Bugs pass through various statuses: Open → Assigned → In Progress → Resolved.</li>
-              <li>Developers can change statuses and provide resolutions upon fixing.</li>
-            </ul>
-          </li>
-          <li><strong>Project Assignment Module:</strong>
-            <ul className="bts-nested-list">
-              <li>Admins can assign specific projects to developers and testers.</li>
-              <li>Users only see bugs and project data relevant to their assignments.</li>
-            </ul>
-          </li>
-          <li><strong>Advanced Filtering and Sorting:</strong>
-            <ul className="bts-nested-list">
-              <li>Bugs can be filtered by project, status, priority, and creation time (last 1 day, 7 days, or month).</li>
-              <li>Bugs are organized and displayed by status using collapsible sections.</li>
-            </ul>
-          </li>
-          <li><strong>Interactive UI Components:</strong>
-            <ul className="bts-nested-list">
-              <li>Searchable and sortable bug tables.</li>
-              <li>Profile dropdown with logout, change password, and session info.</li>
-              <li>Navigation bar with dynamic routing based on user roles.</li>
-            </ul>
-          </li>
-          <li><strong>Authentication and Authorization:</strong>
-            <ul className="bts-nested-list">
-              <li>Secure JWT-based login and registration system.</li>
-              <li>Admin-restricted user registration interface.</li>
-            </ul>
-          </li>
-        </ul>
-
-        <h2 className="bts-subtitle">Tech Stack:</h2>
-        <ul className="bts-list">
-          <li><strong>Frontend:</strong> React.js, Tailwind CSS, Axios, React Router</li>
-          <li><strong>Backend:</strong> Spring Boot, Spring Security, JWT</li>
-          <li><strong>Database:</strong> MySQL</li>
-          <li><strong>Other Tools:</strong> Postman, Git, Maven</li>
-        </ul>
-
-        <p className="bts-paragraph">
-          This project reflects my ability to design full-stack, secure, and user-role-driven applications that solve real-world software development collaboration challenges.
+          This comprehensive bug and task tracking system demonstrates advanced full-stack development capabilities, 
+          including complex role-based workflows, real-time notifications, secure file handling, and sophisticated 
+          project management features. The application showcases expertise in building enterprise-grade solutions 
+          that streamline software development processes and enhance team collaboration.
         </p>
       </div>
 
