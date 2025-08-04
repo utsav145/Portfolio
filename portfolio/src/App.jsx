@@ -12,6 +12,7 @@ import Certificates from './components/Certificates';
 import Contact from './components/Contact';
 import BugTrackingSystem from './components/BugTrackingSystem';
 import Skillshare from './components/Skillshare';
+import DreamLogs from './components/DreamLogs';
 
 function App() {
   const location = useLocation();
@@ -54,6 +55,7 @@ function App() {
           } />
           <Route path="/projects/bug-tracking-system" element={<BugTrackingSystem />} />
           <Route path="/projects/skillsharers" element={<Skillshare />} />
+          <Route path="/projects/dream-logs" element={<DreamLogs />} />
         </Routes>
       </main>
       <footer className="app-footer">
