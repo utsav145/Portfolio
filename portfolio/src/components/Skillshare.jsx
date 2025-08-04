@@ -17,50 +17,150 @@ const Skillshare = () => {
 
         <h2 className="ss-subtitle">Overview</h2>
         <p className="ss-paragraph">
-          SkillSharers is an innovative web application designed to connect individuals seeking specific skills with professionals offering their expertise. It functions as a marketplace where users can share their skills, offer services, and also find and hire skilled individuals for various tasks and projects.
+          SkillSharers is an innovative web application designed to connect individuals seeking specific skills 
+          with professionals offering their expertise. It functions as a marketplace where users can share their 
+          skills, offer services, and also find and hire skilled individuals for various tasks and projects. 
+          The platform creates a dynamic ecosystem for skill exchange, professional networking, and service-based 
+          transactions, enabling users to monetize their expertise while helping others achieve their goals.
         </p>
 
-        <h2 className="ss-subtitle">Features</h2>
-        <ul className="ss-list">
-          <li><strong>User Authentication:</strong> Secure login and registration system</li>
-          <li><strong>Profile Management:</strong> Customizable user profiles showcasing skills, experience, and service offerings with pricing information</li>
-          <li><strong>Skill Marketplace:</strong> A platform for professionals to offer their skills and for users to find and hire talent</li>
-          <li><strong>Direct Messaging:</strong> Users can communicate directly to discuss projects and services.</li>
-          <li><strong>Skill Request System:</strong> Users can post requests for specific skills, and professionals can respond with offers.</li>
-          <li><strong>User Exploration:</strong> Browse and connect with other users based on their skills, services, and interests.</li>
-          <li><strong>Hiring Functionality:</strong> Users can directly hire professionals for their listed skills and services.</li>
-          <li><strong>Rating and Review System:</strong> User ratings and reviews for quality assurance and trust-building.</li>
-          <li><strong>Admin Dashboard:</strong> Comprehensive admin panel for platform management and moderation.</li>
-          <li><strong>Responsive Design:</strong> Modern UI that works seamlessly across all devices.</li>
-          <li><strong>Dynamic Profile Customization:</strong> Users can easily customize and update their profile information and service offerings.</li>
-          <li><strong>Image Upload:</strong> Supports image uploads for profile pictures and service portfolios.</li>
-        </ul>
+        <h2 className="ss-subtitle">Key Features</h2>
+        <div className="features-grid">
+          <div className="feature-card">
+            <h3 className="feature-title">Skill Marketplace</h3>
+            <p>A comprehensive platform for professionals to offer their skills and for users to find and hire talent for various projects.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">User Authentication</h3>
+            <p>Secure login and registration system with JWT token-based authentication and role-based access control.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">Profile Management</h3>
+            <p>Customizable user profiles showcasing skills, experience, service offerings, and pricing information.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">Direct Messaging</h3>
+            <p>Real-time communication system allowing users to discuss projects, negotiate terms, and collaborate effectively.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">Skill Request System</h3>
+            <p>Users can post requests for specific skills, and professionals can respond with detailed proposals and offers.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">User Exploration</h3>
+            <p>Advanced search and filtering to browse and connect with professionals based on skills, ratings, and availability.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">Hiring Functionality</h3>
+            <p>Streamlined process for users to directly hire professionals for their listed skills and services.</p>
+          </div>
+          
+          <div className="feature-card">
+            <h3 className="feature-title">Rating & Review System</h3>
+            <p>Comprehensive feedback system with user ratings and reviews for quality assurance and trust-building.</p>
+          </div>
+        </div>
+
+        <h2 className="ss-subtitle">Platform Features</h2>
+        <div className="platform-features">
+          <div className="platform-feature-section">
+            <h3 className="platform-feature-title">For Skill Providers</h3>
+            <ul className="platform-feature-list">
+              <li>Create detailed service profiles with skills and pricing</li>
+              <li>Upload portfolio images and showcase previous work</li>
+              <li>Set availability and response time expectations</li>
+              <li>Receive and manage service requests</li>
+              <li>Communicate directly with potential clients</li>
+              <li>Build reputation through reviews and ratings</li>
+              <li>Track earnings and project history</li>
+              <li>Customize profile visibility and privacy settings</li>
+            </ul>
+          </div>
+          
+          <div className="platform-feature-section">
+            <h3 className="platform-feature-title">For Skill Seekers</h3>
+            <ul className="platform-feature-list">
+              <li>Browse professionals by skills and categories</li>
+              <li>Filter by ratings, pricing, and availability</li>
+              <li>Post detailed project requirements</li>
+              <li>Receive proposals from qualified professionals</li>
+              <li>Compare offers and professional profiles</li>
+              <li>Secure payment and milestone tracking</li>
+              <li>Rate and review completed services</li>
+              <li>Save favorite professionals for future projects</li>
+            </ul>
+          </div>
+        </div>
 
         <h2 className="ss-subtitle">Tech Stack</h2>
-        <h3 className="ss-sub-heading">Frontend</h3>
-        <ul className="ss-list">
-          <li>React.js</li>
-          <li>React Router for navigation</li>
-          <li>Context API for state management</li>
-          <li>CSS3 with modern styling</li>
-          <li>React Icons</li>
-          <li>React Toastify for notifications</li>
-          <li>AOS (Animate On Scroll) for animations</li>
-        </ul>
+        <div className="tech-stack">
+          <div className="tech-section">
+            <h3 className="tech-title">Frontend</h3>
+            <ul className="tech-list">
+              <li>React.js</li>
+              <li>React Router for navigation</li>
+              <li>Context API for state management</li>
+              <li>CSS3 with modern styling</li>
+              <li>React Icons</li>
+              <li>React Toastify for notifications</li>
+              <li>AOS (Animate On Scroll) for animations</li>
+            </ul>
+          </div>
+          
+          <div className="tech-section">
+            <h3 className="tech-title">Backend</h3>
+            <ul className="tech-list">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>MySQL Database</li>
+              <li>JWT Authentication</li>
+              <li>Bcrypt for password hashing</li>
+              <li>Multer for file uploads</li>
+              <li>CORS enabled</li>
+            </ul>
+          </div>
+          
+          <div className="tech-section">
+            <h3 className="tech-title">Additional Tools</h3>
+            <ul className="tech-list">
+              <li>Git for version control</li>
+              <li>Postman for API testing</li>
+              <li>Cloudinary for image storage</li>
+              <li>Nodemailer for email notifications</li>
+              <li>Bcrypt for password hashing</li>
+              <li>CORS for cross-origin requests</li>
+            </ul>
+          </div>
+        </div>
 
-        <h3 className="ss-sub-heading">Backend</h3>
-        <ul className="ss-list">
-          <li>Node.js</li>
-          <li>Express.js</li>
-          <li>MySQL Database</li>
-          <li>JWT Authentication</li>
-          <li>Bcrypt for password hashing</li>
-          <li>Multer for file uploads</li>
-          <li>CORS enabled</li>
-        </ul>
+        <h2 className="ss-subtitle">Security & Quality</h2>
+        <div className="security-features">
+          <div className="security-item">
+            <h4>Secure Authentication</h4>
+            <p>JWT-based authentication with encrypted password storage and secure session management</p>
+          </div>
+          <div className="security-item">
+            <h4>Payment Protection</h4>
+            <p>Secure payment processing with escrow services and milestone-based payment releases</p>
+          </div>
+          <div className="security-item">
+            <h4>Quality Assurance</h4>
+            <p>Comprehensive rating system, review verification, and dispute resolution mechanisms</p>
+          </div>
+        </div>
 
         <p className="ss-paragraph">
-          This project demonstrates a comprehensive understanding of full-stack web development, including secure authentication, robust data management, a dynamic skill marketplace, and user-friendly interfaces. It highlights my ability to build scalable and interactive platforms that facilitate real-world connections and transactions.
+          This project demonstrates a comprehensive understanding of full-stack web development, including 
+          secure authentication, robust data management, a dynamic skill marketplace, and user-friendly interfaces. 
+          It highlights my ability to build scalable and interactive platforms that facilitate real-world connections 
+          and transactions, showcasing expertise in creating marketplaces that connect service providers with clients 
+          in a secure and efficient manner.
         </p>
       </div>
     </div>
