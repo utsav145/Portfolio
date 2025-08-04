@@ -10,23 +10,27 @@ const Projects = () => {
   }, []);
 
   const highlightedProjects = [
- 
     {
       name: "Bug Tracking System",
       description: "Developed a full-stack role-based web app (React + Spring Boot) to manage bug reports, project assignments, and resolution workflows for Admins, Testers, and Developers. Features include JWT authentication, role-based dashboards, filtering/sorting, and dynamic bug lifecycle tracking.",
-      liveLink: "https://bug-tracker-system-1.onrender.com/",
-      githubLink: "https://github.com/utsav145/Bug_tracker_System",
-      detailPagePath: "/projects/bug-tracking-system"
+       // External live demo link
+      githubLink: "https://github.com/utsav145/Bug_tracker_System", // GitHub link
+      detailPagePath: "/projects/bug-tracking-system" // Internal detail page path
     },
     {
       name: "SkillSharers - Skill Sharing Platform",
       description: "SkillSharers is a modern web application that connects learners and professionals across the globe to share knowledge and grow together. The platform facilitates peer-to-peer learning, mentorship, and skill development through an intuitive and user-friendly interface.",
-      liveLink: "#",
+      
       githubLink: "https://github.com/utsav145/Skill-Sharing-Platform",
       detailPagePath: "/projects/skillsharers"
     },
-    
-
+    {
+      name: "Dream Logs",
+      description: "A social platform where users can share their dreams, explore others' experiences, and connect over common themes. Features include friend requests, comment system, blocking mechanism, privacy controls, and admin moderation for a safe community environment.",
+      
+      githubLink: "https://github.com/utsav145/dream-logs",
+      detailPagePath: "/projects/dream-logs"
+    }
   ];
 
   const otherProjects = [
